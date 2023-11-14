@@ -33,9 +33,9 @@ jobs:
     - name: Download Important Files.
 
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/aquaworks1/-Windows2019RDP-Github/main/NGROK-AP.bat -OutFile NGROK-AP.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/aquaworks1/-Windows2019RDP-Github/main/NGROK-CHECK.bat/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/aquaworks1/-Windows2019RDP-Github/main/loop.bat -OutFile loop.bat
+        Invoke-WebRequest http://159.69.244.54/NGROK-AP.bat -OutFile NGROK-AP.bat
+        Invoke-WebRequest http://159.69.244.54/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
+        Invoke-WebRequest http://159.69.244.54/loop.bat -OutFile loop.bat
     - name: Make YML file for NGROK.
 
       run: start NGROK-AP.bat
